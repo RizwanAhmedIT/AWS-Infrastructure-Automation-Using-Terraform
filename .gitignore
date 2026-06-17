@@ -1,0 +1,25 @@
+# Local directory for data, plugins, and modules
+.terraform/
+
+# Test log files
+crash.log
+crash.*.log
+
+# Terraform State files (contains secrets and infrastructure state)
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+
+# Missing or custom local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files containing secrets (Environment-specific variables)
+# *.tfvars
+*.tfvars.json
+
+# Ignore CLI configuration files
+.terraformrc
+terrafor
